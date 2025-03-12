@@ -12,7 +12,7 @@ config.matcher: This tells Next.js which routes the middleware should run on. Us
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { auth } from '@/lib/firebase';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged } from 'firebase/auth';
 
 export async function middleware(request: NextRequest) {
   const protectedRoutes = ['/dashboard', '/profile', '/teachers']; // Add your protected routes here

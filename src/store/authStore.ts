@@ -4,9 +4,9 @@ import { auth } from '@/lib/firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 
 interface AuthState {
-  user: any | null; // Replace 'any' with your user type
+  user: User | null; // Replace 'any' with your user type
   loading: boolean;
-  setUser: (user: any | null) => void;
+  setUser: (user: User | null) => void;
   setLoading: (loading: boolean) => void;
   logout: () => Promise<void>;
 }
