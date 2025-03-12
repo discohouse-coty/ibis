@@ -3,16 +3,16 @@
 
     'use client';
 
-    import SignUpForm from '@/components/auth/SignUpForm';
+    import SignupForm from '@/components/auth/SignupForm';
     import React from 'react';
     
-    const SignUpPage = () => {
+    const SignupPage = () => {
       return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
           <h1>Sign Up</h1>
-          <SignUpForm />
+          <SignupForm />
         </div>
       );
     };
     
-    export default LoginPage;
+    export default SignupPage;
